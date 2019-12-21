@@ -1,0 +1,897 @@
+html body {
+    cursor: default;
+    background-color: black;
+    color: aliceblue;
+}
+
+:root{
+    --dropdown-width: 100%;
+}
+
+div.nav{
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+
+
+
+.all-columns {
+    border: 3px solid black;
+    padding-top: 50px;
+    background-color: black;
+    width: 100%;
+    margin: auto;
+    display:flex;
+}
+
+
+
+p.username {
+    display: inline;
+    font-size: 0.6rem;
+    padding: 0.5rem;
+    color: gray;
+}
+
+p.username:hover {
+    text-decoration: underline;
+
+}
+
+.post {
+    width: 100%;
+    background-color: rgb(50, 50, 50);
+    display: flex;
+    border: .1rem solid gray;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.post:hover {
+    border-color: lightgray;
+}
+
+.side-post {
+    width: 6%;
+    background-color: rgb(30, 30, 30);
+    font-size: 1rem;
+    text-align: center;
+    padding: .5rem 0rem;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.body-post {
+    width: 94%;
+    background-color: rgb(40, 40, 40);
+    white-space: normal;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+
+
+}
+
+.post-title {
+    margin: .2rem;
+    padding: .4rem;
+    font-size: 1rem;
+
+}
+
+.post-around {
+    padding: 5px;
+    border: 2px solid black;
+    padding-right: 0px;
+    border-radius: 5px;
+    background-color: gray;
+}
+
+.post-around:hover {
+    border-color: aliceblue;
+}
+
+.sub-image {
+    border-radius: 50%;
+    width: 20px;
+    margin: 0.2rem;
+}
+
+.subreddit {
+    display: inline;
+    padding: 0.5rem;
+    padding-left: 0rem;
+    font-size: 0.65rem;
+    font-weight: bold;
+
+}
+
+.subreddit:hover {
+    text-decoration: underline;
+}
+
+.fa-arrow-up {
+    color: gray;
+}
+
+.fa-arrow-up:hover {
+    color: orangered;
+}
+
+.fa-arrow-down {
+    color: gray;
+}
+
+.fa-arrow-down:hover {
+    color: deepskyblue;
+}
+
+
+.post-bottom {
+    display: flex;
+}
+
+.bottom-btn {
+    margin: 0.3rem .1rem;
+    color: rgb(150, 150, 150);
+    border-radius: 0.2rem;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.6rem;
+    font-weight: bold;
+
+}
+
+.bottom-btn:hover {
+    background-color: white;
+    opacity: 0.2;
+    color: black;
+}
+
+.fa-comment {
+    padding: 0.2rem;
+}
+
+.fa-share {
+    padding: 0.2rem;
+}
+
+.image-post {
+    width: 100%;
+}
+
+.votes {
+    font-size: 0.8rem
+}
+
+.topnav {
+    background-color: rgb(20,20,20);
+    display: flex;
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid grey;
+    height: 50px;
+    z-index: 3;
+}
+
+
+.searchbar {
+    padding: 0px 5px;
+    font-size: 1rem;
+    background-color: rgb(40,40,40);
+    color: white;
+    border: none;
+    margin: 0.3rem;
+    width: 100%;
+}
+
+.search {
+    padding: 0px 5px;
+    background-color: rgb(40,40,40);
+    border: 1px solid gray;
+    border-radius: 6px;
+    width: 10%;
+    margin: auto 10px;
+    display: flex;
+    flex-grow: 2;
+}
+
+.fa-search {
+    padding: 0px 5px;
+    margin:auto;
+}
+
+.logo-image {
+    width: 20px;
+    background-color: orangered
+}
+
+
+
+.dropdown-wrapper {
+    width: 15%;
+    margin: auto 10px;
+    align-self: flex-end;
+}
+
+
+.dropbtn {
+  background-color: rgb(30,30,30);
+  color: white;
+  padding: 4px;
+  font-size: 1rem;
+  border: 1px solid grey;
+  border-radius: 4px 4px 4px 4px; 
+  width: var(--dropdown-width);
+  text-align: left;
+  display: flex;
+  text-overflow: clip;
+    white-space: nowrap;
+overflow: hidden;
+
+}
+
+.dropdown {
+  margin: auto 0px;
+    width: 100%;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  min-width: 200px;
+  max-height: 400px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 0px 0px 8px 8px;
+  overflow: auto;
+  border: 1px solid grey;  
+  border-top: none;
+}
+
+.dropdown-content a{
+  color: white;
+  padding: 6px 10px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-sub {
+    
+  display: flex;
+  color: white;
+  padding: 6px 10px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-row:hover {
+    background-color: rgb(100,100,100,0.3);
+    color: black;
+}
+
+.dropbtn:hover{
+     border-radius: 8px 8px 0px 0px;
+    border: 1px solid gray;
+    border-bottom: none;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: black;
+      border-radius: 8px 8px 0px 0px;
+    border: 1px solid gray;
+    border-bottom: none;
+}
+
+
+
+
+
+.fa-rocket {
+    padding: 4px;
+    color:dodgerblue;
+    float:left;
+}
+
+.home-txt {
+    font-size: 0.8rem;
+    padding: 2px;
+    margin-left: 5px;
+    text-overflow: clip;
+}
+
+.sub-icon {
+    background-color: aliceblue;
+    width: 10px;
+    height:  10px;
+    border-radius: 50%;
+}
+
+.dropdown-row {
+    display: flex;
+}
+
+.subreddit-icon {
+    width: 10px;
+    height: 10px;
+    background-color: orangered;
+    border-radius: 50%;
+    margin: auto 10px;
+}
+
+.dropdown-category {
+    text-align: left;
+    font-size: 0.7rem;
+    color: grey;
+    margin-left: 1rem;
+    font-weight: bold;
+}
+
+.post-meta {
+    margin: 5px 5px;
+}
+
+.fa-sort-down {
+    float: right;
+    padding-top: 2px;
+    margin-right: 5px;
+    margin-left: auto;
+}
+
+.dropdown-icon {
+    margin: auto 10px;
+    color: dodgerblue;
+    width: 20px;
+}
+
+.signin-btn {
+    border-radius: 5px;
+    padding: 2px 20px;
+    margin: 15px auto;
+    
+    border:1px  solid grey;
+    background-color: white;
+    font-weight: bold;
+    font-size: 0.8rem;
+    align-self: flex-end;
+}
+
+
+#profile-dropdown {
+    justify-self: right;
+}
+
+#dropdown-content-right {
+    right: 0%;
+}
+
+.main-column {
+    width: 100%;
+}
+
+.sugest-subs {
+    position: sticky;
+    top: 70px;
+    width:100%;
+    border-radius: 5px;
+    background-color: rgb(30,30,30);
+    margin-left: 1rem;
+    margin-top: 1rem;
+
+}
+
+.secondary-column {
+    width: 30%;
+    display: none;
+}
+
+
+
+.sub-suggestion {
+    display: flex;
+    padding: 6px;
+    border-top: 1px solid gray;
+    
+}
+
+.sub-sugestion-image {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: auto 0.4rem;
+    background-color: blueviolet;
+    border-radius: 50%;
+}
+
+.sub-suggestion-info {
+    margin: 0.5rem;
+}
+
+.suggest-sub-header {
+    text-align: center;
+    margin-top: 10px;
+    background-color: orangered;
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(0,0,0,01));
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.join-sugestion-btn {
+    margin: auto;
+    margin-right: 1rem;
+    background-color: gainsboro;
+    padding: 3px 20px;
+    color: black;
+    border-radius: 5px;
+    font-size: 0.8rem
+    
+}
+.join-sugestion-btn:hover{
+    background-color: white;
+}
+
+.text-post {
+    margin: 1rem;
+    color: antiquewhite;
+
+}
+
+.fa-bookmark {
+    padding: 0.2rem;
+}
+
+.sub-suggestion-name {
+    font-size: 0.7rem;
+    margin-bottom: -4px;
+    
+}
+.sub-suggestion-name:hover{
+    text-decoration: underline;
+}
+
+.sub-suggestion-members {
+    font-size: 0.6rem;
+    color: gray;
+}
+
+.bub-suggestion-header-text {
+    padding:20px;
+    margin: 0px;
+}
+
+
+
+#overlay-post {
+    
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 50px;
+  bottom: 0;
+  right:0;
+  left: 0;
+  background-color: rgba(0,0,0, 0.8); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor:auto; /* Add a pointer on hover */
+ 
+}
+
+.fa-flask {
+    padding: 3px;
+    color: dodgerblue;
+    float:left;
+}
+
+.overlay-all-columns {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    overscroll-behavior: contain;/*prevent main page scrolling while scrolling overlay */
+    overflow: scroll;
+    
+}
+
+.post-overlay-column {
+    width: 100%;
+}
+
+.secondary-overlay-column {
+    display: none;
+    width: 30%;
+    margin:1rem;
+    margin-top: 1rem;
+}
+
+.create-comment {
+    padding: 0px;
+    margin: 10px auto;
+    width: 80%;
+}
+
+.textarea-comment {
+    background-color: rgb(40,40,40);
+    color: white;
+    padding: 10px;
+    padding-bottom: 0px;
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom: none;    
+    border-color: whitesmoke;
+}
+
+.submit-comment-btn {
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 5px;
+    width:100px;
+    text-align: center;
+    margin-right: 2px;
+    margin-bottom: 2px;
+}
+
+.comment-section {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(20,20,20);
+
+}
+
+
+
+.comment {
+    display: flex;
+    background-color: rgb(40,40,40);
+}
+
+.comment-side {
+    text-align: center;
+    width: 20px;
+    padding-top: 5px;
+    display: flex;
+	flex-direction: column;
+    font-size: 0.8rem;
+}
+
+.comment-data {
+    align-self: flex-start;
+    width: 100%;
+    
+    
+}
+
+.comment-username {
+    color: dodgerblue;
+    font-size: 0.7rem;
+    padding: 3px;
+}
+
+.comment-username:hover{
+    text-decoration: underline;
+}
+
+.comment-points {
+    color: gray;
+    font-size: 0.7rem
+}
+
+.comment-time {
+    color: gray;
+    font-size: 0.7rem;
+}
+
+.comment-body {
+    padding: 10px;
+    padding-right: 60px;
+    padding-bottom: 0px;
+    padding-top: 3px;
+    font-size: 0.9rem;
+}
+
+.comment-wrapper {
+    display: block;
+    padding-top: 10px;
+    background-color: rgb(40,40,40);
+}
+
+
+
+.comment-side-line {
+    width: 2px;
+    height: 100%;
+    background-color: rgb(60,60,60);
+    margin: auto;
+    padding: 1px;
+   
+}
+
+.comment-side-line:hover{
+    background-color: whitesmoke;
+}
+
+.comment-side-vote {
+    height: 10%;
+}
+
+.overlay-post {
+    border: none;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.overlay-side-post {
+    background-color: rgb(40,40,40);
+}
+
+.post-image-container {
+   max-height: 700px;/*height of image before beeing croped*/
+  overflow: hidden;
+}
+
+.all-comment-bottom {
+    width: 100%;
+    height: 30px;
+    background-color: rgb(40,40,40);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.comment-root {
+    padding-top: 30px;
+}
+
+.comment-side-line-wrapper {
+    height: 100%;
+}
+.comment-side-line-wrapper:hover .comment-side-line{
+    background-color: white;
+}
+
+.comment-footer {
+    display: flex;
+}
+
+.textarea-options {
+    background-color: rgb(30,30,30);
+    margin-top: -7px;
+    border: 1px solid whitesmoke;
+    border-top: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display:flex;
+}
+
+.textarea-user {
+    font-size: 0.8rem;
+    margin:auto 5px;
+    
+}
+
+.overlay-sub-info {
+    position: sticky;
+    top: 20px;
+    
+    background-color:black;
+ border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.overlay-sub-image {
+    width: 50px;
+    border-radius: 50%;
+    margin: 10px;
+
+}
+
+.overlay-sub-header {
+    display:flex;
+    background-color: orangered;
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(0,0,0,01));
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.overlay-sub-name {
+    font-size: 1.1rem;
+    margin: auto 0px;
+     letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.overlay-sub-data {
+    display: flex;
+}
+
+
+
+.overlay-sub-main {
+    display:flex;
+}
+
+.overlay-sub-members {
+    width:50%;
+    margin: 10px;
+    text-align: center;
+    border-right: 1px solid grey;
+    font-weight: bold;
+}
+
+.overlay-sub-creation-date {
+    margin: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.overlay-sub-join-btn {
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.overlay-sub-description {
+    margin: 10px;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+
+
+
+
+
+.login-popup {
+   
+    display: flex;
+    width: 100%;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    background-color: aqua;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-top: 20%;
+    
+}
+
+.login-side-image {
+    display: none;
+    width: 20%;
+    background-color: orangered;
+    border-radius: 10px 80% 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.login-form {
+    width: 100%;
+    background-color: rgb(40,40,40);
+    border-radius: 0px 5px 5px 0px;
+}
+
+.login-wrapper {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgb(0,0,0,0.7);
+    top: 0px;
+    left: 0px;
+}
+
+.email-input {
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    
+}
+
+.text-email {
+    padding-left: 5px;
+    padding-right: 40px;
+    margin: 0px;
+    border-radius: 5px;
+    background-color: rgb(30,30,30);
+}
+.text-email:focus{
+    border: 2px solid white;
+}
+
+.login-side-image-2 {
+    position: relative;
+    display: none;
+    top: 100px;
+    left: 25px;
+    width: 55%;
+    height: 55%;
+    background-color: aqua;
+     border-radius: 80% 10%;
+}
+
+.login-header {
+    padding: 30px;
+    display: flex;
+}
+
+.login-icon {
+    margin: 5px;
+    margin-right: 10px;
+    color: dodgerblue;
+}
+
+.login-logo {
+    width:60px;
+    height: 60px;
+    margin: 0px;
+    background-color: orangered;
+    border: 2px solid white;
+    border-radius: 50%;
+    -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+    transition: transform 2s , width 2s , height 2s;
+
+}
+.login-header:hover .login-logo{
+    transform: rotateY(360deg);
+    height: 80px;
+    width: 80px;
+}
+
+.login-text-header {
+    text-align: center;
+    margin: auto;
+    font-size: 1.4rem;
+        margin-left: 0px
+}
+
+#login-btn {
+    width: 100px;
+    text-align: center;
+    margin-right: 115px;
+    margin-top: 5px
+}
+
+.fa-times-circle {
+    float: right;
+    margin: 10px 10px;
+    font-size: 1.5rem;
+    color: gray;
+}
+.fa-times-circle:hover{
+    color: white;
+}
+
+#login-popup-id{
+    display: none;
+}
+
+#login-message {
+    position: relative;
+    top: 80px;
+    left: 10px;
+    width: 80%;
+    margin: 10px 20px;
+    background-color: red;
+}
+
+.login-options {
+    display:flex;
+}
+
+.signup-referal {
+    font-size: 0.8rem;
+    margin: 10px 10px 10px 40px;
+    color: dodgerblue;
+    
+    
+}
+.signup-referal:hover{
+    text-decoration: underline;
+}
+
+

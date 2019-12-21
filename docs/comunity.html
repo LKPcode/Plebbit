@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+
+    
+    <link rel="stylesheet" href="styles.css" />
+
+
+    <script src="https://kit.fontawesome.com/bec6a57001.js" crossorigin="anonymous"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+
+    <div class="topnav">
+
+        <div class="nav">
+            <div class="logo-image"> </div>
+        </div>
+
+        <div class="dropdown-wrapper">
+            <div class="dropdown">
+                <div class="dropbtn">
+                    <i class="fas fa-rocket"></i>
+
+                    <div class="home-txt">Home</div>
+                    <i class="fas fa-sort-down"></i>
+
+                </div>
+                <div class="dropdown-content">
+
+                    <div class="dropdown-category">FEEDS </div>
+
+
+                    <div class="dropdown-row">
+                        <i class="fas fa-crown dropdown-icon"></i>
+                        <a href="#">Popular</a>
+                    </div>
+                    <div class="dropdown-row">
+                        <i class="fas fa-users dropdown-icon"></i>
+                        <a href="./index.html">Top Communities</a>
+                    </div>
+                    <div class="dropdown-category">SUBREDDITS </div>
+                    <div class="dropdown-row">
+                        <div class="subreddit-icon"> </div>
+                        <a href="./comunity.html">r/CoolStuff</a>
+                    </div>
+                    <div class="dropdown-row">
+                        <div class="subreddit-icon"> </div>
+                        <a href="#">r/DontCare</a>
+                    </div>
+                    <div class="dropdown-row">
+                        <div class="subreddit-icon"> </div>
+                        <a href="#">r/WebDev</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="search">
+            <i class="fas fa-search"></i>
+            <input class="searchbar" type="text" placeholder="Search...">
+        </div>
+
+
+        <div id="profile-dropdown" class="dropdown-wrapper">
+            <div class="dropdown">
+                <div class="dropbtn">
+                    <i class="fas fa-flask"></i>
+
+                    <div class="home-txt">Profile</div>
+                    <i class="fas fa-sort-down"></i>
+
+                </div>
+                <div class="dropdown-content" id="dropdown-content-right">
+
+                    <div class="dropdown-row" onclick="openLoginPopup()">
+                        <i class="fa fa-sign-in dropdown-icon"></i>
+                        <a href="#">Log In</a>
+                    </div>
+
+                    <div class="dropdown-row">
+                        <i class="fa fa-user-circle dropdown-icon"></i>
+                        <a href="./profile.html">Your Profile</a>
+                    </div>
+                    <div class="dropdown-row">
+                        <i class="fas fa-moon dropdown-icon"></i>
+                        <a href="#">Night Mode</a>
+                    </div>
+
+                    <div class="dropdown-row">
+                        <i class="fas fa-cog dropdown-icon"></i>
+                        <a href="#">Settings</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="comunity-image-wall">
+        <div class="comunity-wall-info">
+            <div class="comunity-wall-logo">
+
+            </div>
+            <div class="comunity-wall-name">
+                r/CoolStuff
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="sorting-options" id="comunity-sorting-options">
+
+        <div class="sorting-options-wrapper">
+            <div class="sorting-text"> SORT BY :</div>
+
+            <div class="sort-option sort-selected"> <i class="fas fa-burn"></i> HOT </div>
+            <div class="sort-option "><i class="fas fa-crown"></i> TOP </div>
+            <div class="sort-option "><i class="fas fa-certificate"></i> NEW </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <div class="all-columns">
+
+        <div class="main-column">
+
+
+            <div class="post">
+                <div class="side-post">
+                    <div><i class="fas fa-arrow-up"></i></div>
+                    <div class="votes"> 0</div>
+                    <div> <i class="fas fa-arrow-down"></i></div>
+                </div>
+                <div class="body-post " onclick="on()">
+                    <div class="w-100">
+                        <div class="post-meta"> <img src="images/reddit.png" class="sub-image">
+                            <p class="subreddit"> r/SubReddit </p>
+                            <p class="username">posted by u/Spectator some minutes ago </p>
+                        </div>
+                        <p class="post-title"> One of the most beautiful views I have ever seen. This is near your mamas house.</p>
+                    </div>
+
+                    <div class="text-post">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+
+                    <div class="w-100 post-bottom">
+                        <div class=" bottom-btn"><i class="fas fa-comment"></i> Comment</div>
+                        <div class=" bottom-btn"><i class="fas fa-share"></i> Share </div>
+                        <div class="bottom-btn"><i class="fas fa-bookmark"></i> Save </div>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <div class="post">
+                <div class="side-post">
+                    <div><i class="fas fa-arrow-up"></i></div>
+                    <div class="votes"> 0</div>
+                    <div> <i class="fas fa-arrow-down"></i></div>
+                </div>
+                <div class="body-post ">
+                    <div class="w-100">
+                        <div class="post-meta"> <img src="images/reddit.png" class="sub-image">
+                            <p class="subreddit"> r/SubReddit </p>
+                            <p class="username">posted by u/Spectator some minutes ago </p>
+                        </div>
+                        <p class="post-title"> One of the most beautiful views I have ever seen. This is near your mamas house.</p>
+                    </div>
+
+                    <div class="text-post">
+                        <div class="post-link-image">
+
+                        </div>
+                        <div class="post-text-area">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="w-100 post-bottom">
+                        <div class="comment-btn bottom-btn"><i class="fas fa-comment"></i> Comment</div>
+                        <div class="comment-btn bottom-btn"><i class="fas fa-share"></i> Share </div>
+                        <div class="comment-btn bottom-btn"><i class="fas fa-bookmark"></i> Save </div>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <div class="post">
+                <div class="side-post">
+                    <div><i class="fas fa-arrow-up"></i></div>
+                    <div class="votes"> 0</div>
+                    <div> <i class="fas fa-arrow-down"></i></div>
+                </div>
+                <div class="body-post">
+                    <div class="w-100">
+                        <div class="post-meta"> <img src="images/reddit.png" class="sub-image">
+                            <p class="subreddit"> r/SubReddit </p>
+                            <p class="username">posted by u/Spectator some minutes ago </p>
+                        </div>
+                        <p class="post-title"> One of the most beautiful views I have ever seen. This is near your mamas house.</p>
+                    </div>
+                    <div class="post-image-container">
+                        <img src="images/flower.jpeg" class="image-post">
+                    </div>
+
+                    <div class="w-100 post-bottom">
+                        <div class="comment-btn bottom-btn"><i class="fas fa-comment"></i> Comment</div>
+                        <div class="comment-btn bottom-btn"><i class="fas fa-share"></i> Share </div>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+            <div class="post">
+                <div class="side-post">
+                    <div><i class="fas fa-arrow-up"></i></div>
+                    <div class="votes"> 0</div>
+                    <div> <i class="fas fa-arrow-down"></i></div>
+                </div>
+                <div class="body-post">
+                    <div class="w-100">
+                        <span> <img src="images/reddit.png" class="sub-image">
+                            <p class="subreddit"> r/SubReddit </p>
+                            <p class="username">posted by u/Spectator some minutes ago </p>
+                        </span>
+                        <p class="post-title"> You think honney is cool? Wait until you play minecraft. Its super cool.</p>
+                    </div>
+                    <img src="images/drop.jpg" class="image-post">
+                    <div class="w-100 post-bottom">
+                        <div class="comment-btn bottom-btn"><i class="fas fa-comment"></i> Comment</div>
+                        <div class="comment-btn bottom-btn"><i class="fas fa-share"></i> Share </div>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+        <div class="secondary-column">
+
+            <div class="overlay-sub-info" id="comunity-sub-info">
+                <div class="overlay-sub-header">
+                    <img src="images/reddit.png" class="overlay-sub-image">
+                    <div class="overlay-sub-name">r/CoolStuff</div>
+                </div>
+                <div class="overlay-sub-main">
+                    <div class="overlay-sub-members">
+                        <div class="overlay-sub-number-of-members">
+                            2k
+                        </div>
+                        <div>
+                            members
+                        </div>
+                    </div>
+
+                    <div class="overlay-sub-creation-date">
+                        September 11 2001
+                    </div>
+                </div>
+
+                <div class="overlay-sub-join-btn join-sugestion-btn">
+                    JOIN
+                </div>
+                <div class="overlay-sub-join-btn join-sugestion-btn">
+                    CREATE POST
+                </div>
+                <div class="overlay-sub-description">
+                    This sub hosts all the cool stuff. Do you think you are cool, post yourself.
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <div id="overlay-post">
+
+
+        <div class="overlay-all-columns">
+            <div class="post-overlay-column">
+
+                <div class="post overlay-post">
+                    <div class="side-post overlay-side-post">
+                        <div><i class="fas fa-arrow-up"></i></div>
+                        <div class="votes"> 0</div>
+                        <div> <i class="fas fa-arrow-down"></i></div>
+                    </div>
+                    <div class="body-post">
+                        <div class="w-100">
+                            <span> <img src="images/reddit.png" class="sub-image">
+                                <p class="subreddit"> r/SubReddit </p>
+                                <p class="username">posted by u/Spectator some minutes ago </p>
+                            </span>
+                            <p class="post-title"> You think honney is cool? Wait until you play minecraft. Its super cool.</p>
+                        </div>
+                        <img src="images/honney.jpg" class="image-post">
+                        <div class="w-100 post-bottom">
+                            <div class="comment-btn bottom-btn"><i class="fas fa-comment"></i> Comment</div>
+                            <div class="comment-btn bottom-btn"><i class="fas fa-share"></i> Share </div>
+
+
+                        </div>
+
+                        <div class="create-comment">
+
+
+                            <textarea rows="2" cols="60" class="textarea-comment" required>
+                            </textarea>
+
+                            <div class="textarea-options">
+                                <div class="textarea-user"> Comment as Spectator</div>
+                                <div class="submit-comment-btn join-sugestion-btn"> Submit
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+
+
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="comment-section" onclick="off()">
+
+
+                    <div class="comment-wrapper">
+                        <div class="comment comment-root">
+                            <div class="comment-side">
+
+                                <div><i class="fas fa-arrow-up"></i></div>
+                                <div> <i class="fas fa-arrow-down"></i></div>
+                                <div class="comment-side-line-wrapper">
+                                    <div class="comment-side-line"> </div>
+                                </div>
+
+                            </div>
+                            <div class="comment-data">
+                                <div class="comment-header">
+                                    <span class="comment-username">DaBoss</span>
+                                    <span class="comment-points"> points 0</span>
+                                    <span class="comment-time">- 2 minutes ago</span>
+                                </div>
+                                <div class="comment-body">Lorem ipsum doler yopa noga iosif and igor glknnln nnlknlknlknlnfdnlnnl nkn klnllk nln lknlknln lnlknlnn nn n nn n n n nlnlnlk kl lknlnln lnklbbiugo uf fotufu uff bf b og yog yg y gg gyuo gugygougg ugug guy gug uf f fyu</div>
+                                <div class="comment-footer">
+                                    <div class="comment-btn bottom-btn"><i class="fas fa-comment"></i> Comment</div>
+                                    <div class="comment-btn bottom-btn"><i class="fas fa-share"></i> Share </div>
+                                    <div class="comment-btn bottom-btn"><i class="fas fa-bookmark"></i> Save </div>
+                                </div>
+
+
+
+                                <div class="comment-wrapper">
+                                    <div class="comment">
+                                        <div class="comment-side">
+                                            <div><i class="fas fa-arrow-up"></i></div>
+
+                                            <div> <i class="fas fa-arrow-down"></i></div>
+                                            <div class="comment-side-line-wrapper">
+                                                <div class="comment-side-line"> </div>
+                                            </div>
+                                        </div>
+                                        <div class="comment-data">
+                                            <div class="comment-header">
+                                                <span class="comment-username">Spectator</span>
+                                                <span class="comment-points"> points 0</span>
+                                                <span class="comment-time">- 2 minutes ago</span>
+                                            </div>
+                                            <div class="comment-body">Lorem ipsum doler yopa noga iosif and igor glknnln nnlknlknlknlnfdnlnnl nkn klnllk nln lknlknln </div>
+
+                                            <div class="comment-wrapper">
+                                                <div class="comment">
+                                                    <div class="comment-side">
+                                                        <div><i class="fas fa-arrow-up"></i></div>
+
+                                                        <div> <i class="fas fa-arrow-down"></i></div>
+                                                        <div class="comment-side-line-wrapper">
+                                                            <div class="comment-side-line"> </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="comment-data">
+                                                        <div class="comment-header">
+                                                            <span class="comment-username">HappyCondom</span>
+                                                            <span class="comment-points"> points 0</span>
+                                                            <span class="comment-time">- 2 minutes ago</span>
+                                                        </div>
+                                                        <div class="comment-body">Lorem ipsum doler yopa noga iosif and igor glknnln nnlknlknlknlnfdnlnnl nkn klnllk nln lknlknln lnlknlnn nn n nn n n n nlnlnlk lk nlnkkkkkkkkkkkkknl knnnnnnnnnn nknnnn k kk kn lk nnknnklnkln nn nn nkl lknlnln lnklbbiugo uf fotufu uff bf b og yog yg y gg gyuo gugygougg ugug guy gug uf f fyu</div>
+
+
+
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                            <div class="comment-wrapper">
+                                                <div class="comment">
+                                                    <div class="comment-side">
+                                                        <div><i class="fas fa-arrow-up"></i></div>
+
+                                                        <div> <i class="fas fa-arrow-down"></i></div>
+                                                        <div class="comment-side-line-wrapper">
+                                                            <div class="comment-side-line"> </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="comment-data">
+                                                        <div class="comment-header">
+                                                            <span class="comment-username">NiceCaramel</span>
+                                                            <span class="comment-points"> points 0</span>
+                                                            <span class="comment-time">- 2 minutes ago</span>
+                                                        </div>
+                                                        <div class="comment-body">Lorem ipsum doler yopa noga iosif and igor glknnln nnlknlknlknlnfdnlnnl nkn klnllk nln lknlknln lnlknlnn nn n nn n n n nlnlnlk lk nlnkkkkkkkkkkkkknl knnnnnnnnnn nknnnn k kk kn lk nnknnklnkln nn nn nkl lknlnln lnklbbiugo uf fotufu uff bf b og yog yg y gg gyuo gugygougg ugug guy gug uf f fyu</div>
+
+
+
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="comment-wrapper">
+                        <div class="comment comment-root">
+                            <div class="comment-side">
+                                <div><i class="fas fa-arrow-up"></i></div>
+
+                                <div> <i class="fas fa-arrow-down"></i></div>
+                                <div class="comment-side-line-wrapper">
+                                    <div class="comment-side-line"> </div>
+                                </div>
+
+                            </div>
+                            <div class="comment-data">
+                                <div class="comment-header">
+                                    <span class="comment-username">Spectator</span>
+                                    <span class="comment-points"> points 0</span>
+                                    <span class="comment-time">- 2 minutes ago</span>
+                                </div>
+                                <div class="comment-body">Lorem ipsum doler yopa noga iosif and igor glknnln nnlknlknlknlnfdnlnnl nkn klnllk nln lknlknln lnlknlnn nn n nn n n n nlnlnlk lk nklbbiugo uf fotufu uff bf b og yog yg y gg gyuo gugygougg ugug guy gug uf f fyu</div>
+
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="all-comment-bottom"></div>
+
+                </div>
+
+
+
+            </div>
+
+
+            <div class="secondary-overlay-column">
+                <div class="overlay-sub-info">
+                    <div class="overlay-sub-header">
+                        <img src="images/reddit.png" class="overlay-sub-image">
+                        <div class="overlay-sub-name">r/CoolStuff</div>
+                    </div>
+                    <div class="overlay-sub-main">
+                        <div class="overlay-sub-members">
+                            <div class="overlay-sub-number-of-members">
+                                2k
+                            </div>
+                            <div>
+                                members
+                            </div>
+                        </div>
+
+                        <div class="overlay-sub-creation-date">
+                            September 11 2001
+                        </div>
+                    </div>
+
+                    <div class="overlay-sub-join-btn join-sugestion-btn">
+                        JOIN
+                    </div>
+                    <div class="overlay-sub-description">
+                        This sub hosts all the cool stuff. Do you think you are cool, post yourself.
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="login-wrapper" id="login-popup-id">
+
+
+
+
+        <div class="login-popup">
+
+            <div class="login-side-image">
+                <div class="login-side-image-2">
+
+                </div>
+
+            </div>
+
+            <div class="login-form">
+
+                <i class="far fa-times-circle" onclick="closeLoginPopup()"></i>
+
+                <div class="login-header">
+                    <div class="login-logo"></div>
+                    <div class="login-text-header">Welcome to Plebbit</div>
+                </div>
+
+                <div class="email-input">
+                    <i class="fas fa-envelope login-icon"></i>
+                    <input type="text" placeholder="Enter Email or Username" name="email" class="text-email" required>
+                </div>
+                <div class="email-input">
+                    <i class="fas fa-key login-icon"></i>
+                    <input type="password" placeholder="Enter Password" name="psw" class="text-email" required>
+                </div>
+                <div class="login-options">
+
+                    <div class="signup-referal" onclick="createAccount()">Create an account</div>
+                    <div class="join-sugestion-btn" id="login-btn">LOG IN </div>
+                </div>
+
+
+
+                <div id="login-message">
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <div class="login-wrapper" id="signup-popup-id">
+
+
+
+
+        <div class="login-popup">
+
+            <div class="login-side-image">
+                <div class="login-side-image-2">
+
+                </div>
+
+            </div>
+
+            <div class="login-form">
+
+                <i class="far fa-times-circle" onclick="closeSignupPopup()"></i>
+
+                <div class="login-header">
+                    <div class="login-logo"></div>
+                    <div class="login-text-header">Create Your Account</div>
+                </div>
+
+                <div class="email-input">
+                    <i class="fa fa-user-circle login-icon"></i>
+                    <input type="password" placeholder="Enter Username" name="usr" class="text-email" required>
+                </div>
+                <div class="email-input">
+                    <i class="fas fa-envelope login-icon"></i>
+                    <input type="text" placeholder="Enter Email or Username" name="email" class="text-email" required>
+                </div>
+                <div class="email-input">
+                    <i class="fas fa-key login-icon"></i>
+                    <input type="password" placeholder="Enter Password" name="psw" class="text-email" required>
+                </div>
+                <div class="email-input">
+                    <i class="fas fa-key login-icon"></i>
+                    <input type="password" placeholder="Enter Password Again" name="psw2" class="text-email" required>
+                </div>
+
+
+
+                <div class="login-options">
+
+                    <div class="signup-referal" onclick="gotoLogin()">Login</div>
+                    <div class="join-sugestion-btn" id="login-btn">SIGN UP</div>
+                </div>
+
+
+
+                <div id="login-message">
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+    <script>
+        function on() {
+            document.getElementById("overlay-post").style.display = "block";
+        }
+
+        function off() {
+            document.getElementById("overlay-post").style.display = "none";
+        }
+
+        function openLoginPopup() {
+            document.getElementById("login-popup-id").style.display = "block";
+        }
+
+        function closeLoginPopup() {
+            document.getElementById("login-popup-id").style.display = "none";
+        }
+
+        function closeSignupPopup() {
+            document.getElementById("signup-popup-id").style.display = "none";
+        }
+
+        function createAccount() {
+            document.getElementById("login-popup-id").style.display = "none";
+            document.getElementById("signup-popup-id").style.display = "block";
+
+        }
+
+        function gotoLogin() {
+            document.getElementById("signup-popup-id").style.display = "none";
+            document.getElementById("login-popup-id").style.display = "block";
+
+        }
+    </script>
+
+</body></html>
